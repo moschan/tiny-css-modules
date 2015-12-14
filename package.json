@@ -1,28 +1,26 @@
 {
-  "name": "webpack-demo",
+  "name": "tiny-css-modules",
   "version": "1.0.0",
-  "description": "Working demo of CSS Modules, using Webpack's css-loader in module mode.",
+  "description": "tiny set of CSS Modules, using Webpack's css-loader in module mode.",
   "main": "index.js",
   "scripts": {
-    "test": "webpack",
     "start": "webpack-dev-server",
     "clean": "rm -rf dist",
-    "build": "npm run clean && webpack",
-    "deploy": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\""
+    "build": "npm run clean && $(npm bin)/webpack"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/css-modules/webpack-demo"
   },
-  "author": "Mark Dalgleish",
+  "author": "moschan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/css-modules/webpack-demo/issues"
+    "url": "https://github.com/moschan/minima-css-modules/issues"
   },
-  "homepage": "https://github.com/css-modules/webpack-demo",
   "devDependencies": {
     "css-loader": "^0.15.1",
+    "extract-text-webpack-plugin": "^0.8.1",
     "style-loader": "^0.12.3",
-    "extract-text-webpack-plugin": "^0.8.1"
+    "webpack": "^1.12.9"
   }
 }
